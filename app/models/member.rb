@@ -4,7 +4,7 @@ class Member < ActiveRecord::Base
   validates :name, presence: true, length: { minimum: 3 }
   validates :address, presence: true, length: { minimum: 3 }
   validates :phone, presence: true, length: { minimum: 7, maximum: 12 }
-  validates :gender, presence: true
+  validates :gender, presence: true ,inclusion: { in: %w[male female] }
   enum gender: { male: true, female: false }
   validates :code, presence: true
   validates :validity_date, presence: true, format: { with: /\A\d{4}\-(?:0?[1-9]|1[0-2])\-(?:0?[1-9]|[1-2]\d|3[01])\Z/ }
