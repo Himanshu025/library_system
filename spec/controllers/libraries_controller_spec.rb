@@ -34,7 +34,7 @@ RSpec.describe LibrariesController, type: :controller do
     end
     it 'should not be a valid Edit Action' do 
       library = FactoryGirl.create(:library)
-      get :edit, id:library.id , format:'json', library:{ name:'', address:'',phone:'' }
+      get :edit, id:'1bdsb' , format:'json', library:{ name:'', address:'',phone:'' }
       response.should have_http_status(:unprocessable_entity)
     end 
     it 'should not be a valid Edit Action' do 

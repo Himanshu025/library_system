@@ -23,7 +23,7 @@ RSpec.describe CategoriesController, type: :controller do
       response.should have_http_status(:ok) 
     end
     it'should be a valid Index Action' do 
-      libraries = category.all
+      categories = Category.all
       get :index , format: 'json'
       response.should have_http_status(:ok)
     end
@@ -34,7 +34,7 @@ RSpec.describe CategoriesController, type: :controller do
     end
     it 'should not be a valid Edit Action' do 
       category = FactoryGirl.create(:category)
-      get :edit, id:category.id , format:'json', category:{ name:'' }
+      get :edit, id:'ahjkh' , format:'json', category:{ name:'' }
       response.should have_http_status(:unprocessable_entity)
     end 
     it 'should not be a valid Edit Action' do 

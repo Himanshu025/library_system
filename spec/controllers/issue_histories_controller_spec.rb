@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe IssueHistories_Controller, type: :controller do
+RSpec.describe IssueHistoriesController, type: :controller do
   context 'GET' do
     it 'should be a valid Show Action' do 
       issue_history = FactoryGirl.create(:issue_history)
@@ -23,7 +23,7 @@ RSpec.describe IssueHistories_Controller, type: :controller do
       response.should have_http_status(:ok) 
     end
     it'should be a valid Index Action' do 
-      libraries = issue_history.all
+      issue_histories = IssueHistory.all
       get :index , format: 'json'
       response.should have_http_status(:ok)
     end
@@ -34,7 +34,7 @@ RSpec.describe IssueHistories_Controller, type: :controller do
     end
     it 'should not be a valid Edit Action' do 
       issue_history = FactoryGirl.create(:issue_history)
-      get :edit, id:issue_history.id , format:'json', issue_history:{ issue_type:'', issue_date:'', return_date:'', member_id:'', book_id:'' }
+      get :edit, id: 'acas' , format:'json', issue_history:{ issue_type:'', issue_date:'', return_date:'', member_id:'', book_id:'' }
       response.should have_http_status(:unprocessable_entity)
     end 
     it 'should not be a valid Edit Action' do 

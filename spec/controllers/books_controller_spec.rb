@@ -23,7 +23,7 @@ RSpec.describe BooksController, type: :controller do
       response.should have_http_status(:ok) 
     end
     it'should be a valid Index Action' do 
-      libraries = book.all
+      book = Book.all
       get :index , format: 'json'
       response.should have_http_status(:ok)
     end
@@ -34,7 +34,7 @@ RSpec.describe BooksController, type: :controller do
     end
     it 'should not be a valid Edit Action' do 
       book = FactoryGirl.create(:book)
-      get :edit, id:book.id , format:'json', book:{ name:'' }
+      get :edit, id:'ajhgahj' , format:'json', book:{ name:'' }
       response.should have_http_status(:unprocessable_entity)
     end 
     it 'should not be a valid Edit Action' do 

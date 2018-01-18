@@ -23,7 +23,7 @@ RSpec.describe MembersController, type: :controller do
       response.should have_http_status(:ok) 
     end
     it'should be a valid Index Action' do 
-      libraries = member.all
+      members = Member.all
       get :index , format: 'json'
       response.should have_http_status(:ok)
     end
@@ -34,7 +34,7 @@ RSpec.describe MembersController, type: :controller do
     end
     it 'should not be a valid Edit Action' do 
       member = FactoryGirl.create(:member)
-      get :edit, id:member.id , format:'json', member:{ name:'', phone:'', address:'', gender:'', validity_date:'', code:'', is_author:'', library_id:'' }
+      get :edit, id:'iahs' , format:'json', member:{ name:'', phone:'', address:'', gender:'', validity_date:'', code:'', is_author:'', library_id:'' }
       response.should have_http_status(:unprocessable_entity)
     end 
     it 'should not be a valid Edit Action' do 
