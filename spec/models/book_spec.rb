@@ -51,7 +51,7 @@ RSpec.describe Book, type: :model do
       book.should_not be_valid
     end
     it 'should not have invalid library id' do
-      book = build(:book, library_id: 'a')
+      book = build(:book, library_id: 'amadn')
       book.should_not be_valid
     end
     it 'should not have empty category id' do
@@ -59,7 +59,7 @@ RSpec.describe Book, type: :model do
       book.should_not be_valid
     end
     it 'should not have invalid category id' do
-      book = build(:book, category_id: 'a')
+      book = build(:book, category_id: 'jerry')
       book.should_not be_valid
     end
   end

@@ -1,8 +1,8 @@
 require 'faker'
 FactoryGirl.define do
   factory :member do
-    name { Faker::Number.number(2) }
-    phone_no { Faker::Number.number(10) }
+    name { Faker::Name.name_with_middle }
+    phone { Faker::Number.number(10) }
     address { Faker::Address.street_address }
     gender { Faker::Boolean.boolean(1) }
     validity_date { Faker::Date.between(2.days.ago, Date.today).strftime("%F") }

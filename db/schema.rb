@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180118032432) do
+ActiveRecord::Schema.define(version: 20180118051103) do
 
   create_table "books", force: :cascade do |t|
     t.string   "name",         limit: 255
@@ -60,7 +60,6 @@ ActiveRecord::Schema.define(version: 20180118032432) do
   create_table "members", force: :cascade do |t|
     t.string   "name",          limit: 255
     t.string   "address",       limit: 255
-    t.string   "phone",         limit: 255
     t.boolean  "gender"
     t.string   "code",          limit: 255
     t.date     "validity_date"
@@ -68,6 +67,7 @@ ActiveRecord::Schema.define(version: 20180118032432) do
     t.integer  "library_id",    limit: 4
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.string   "phone",         limit: 255
   end
 
   add_index "members", ["library_id"], name: "index_members_on_library_id", using: :btree

@@ -1,9 +1,9 @@
 class Member < ActiveRecord::Base
   belongs_to :library
   has_many :issue_histories , dependent: :destroy
-  validates :name, presence: true, length: { minimum: 2 }
-  validates :address, presence: true, length: { minimum: 5 }
-  validates :phone_no, presence: true, length: { minimum: 5, maximum: 15 }
+  validates :name, presence: true, length: { minimum: 3 }
+  validates :address, presence: true, length: { minimum: 3 }
+  validates :phone, presence: true, length: { minimum: 7, maximum: 12 }
   validates :gender, presence: true
   enum gender: { male: true, female: false }
   validates :code, presence: true
