@@ -31,7 +31,7 @@ RSpec.describe Member, type: :model do
       member.should_not be_valid
     end
     it 'should not have phone more than 12' do
-      member = build(:member, phone: '1234567890123456')
+      member = build(:member, phone: '0909090909000900009090')
       member.should_not be_valid
     end
     it 'should not have empty is gender' do
@@ -47,7 +47,7 @@ RSpec.describe Member, type: :model do
       member.should_not be_valid
     end
     it 'should not have invalide validity date' do
-      member = build(:member, validity_date: 'ihdioahoi')
+      member = build(:member, validity_date: 'poiuytre')
       member.should_not be_valid
     end
     it 'should not have empty is author' do
