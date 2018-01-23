@@ -36,7 +36,7 @@ class LibrariesController < ApplicationController
     if @library.save
       respond_to do |format|
         format.json { render json: { library: @library }, status: :ok }
-        format.html  
+        format.html {redirect_to libraries_path }
       end
     else
       respond_to do |format|

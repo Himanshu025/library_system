@@ -46,12 +46,10 @@ RSpec.describe LibrariesController, type: :controller do
 
   context 'POST' do 
     it 'should be a valid Create Action' do
-      library = FactoryGirl.create(:library)
-      post :create, format:'json', library:{ name:library.name , address:library.address, phone:library.phone}
+      post :create, format:'json', library:{ name:'Birla Library', address:'156, Tagore Nagr,Hiran Magri', phone:'029445451678'}
       response.should have_http_status(:ok)
     end
     it 'should not be a valid Create Action' do 
-      library = FactoryGirl.create(:library)
       post :create, format:'json', library:{ name:'', address:'', phone:''}
       response.should have_http_status(:unprocessable_entity)
     end

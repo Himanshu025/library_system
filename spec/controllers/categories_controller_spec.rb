@@ -46,12 +46,10 @@ RSpec.describe CategoriesController, type: :controller do
 
   context 'POST' do 
     it 'should be a valid Create Action' do
-      category = FactoryGirl.create(:category)
-      post :create, format:'json', category:{ name:category.name }
+      post :create, format:'json', category:{ name:'Physics' }
       response.should have_http_status(:ok)
     end
     it 'should not be a valid Create Action' do 
-      category = FactoryGirl.create(:category)
       post :create, format:'json', category:{ name:'' }
       response.should have_http_status(:unprocessable_entity)
     end

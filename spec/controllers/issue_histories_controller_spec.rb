@@ -46,12 +46,12 @@ RSpec.describe IssueHistoriesController, type: :controller do
 
   context 'POST' do 
     it 'should be a valid Create Action' do
-      issue_history = FactoryGirl.create(:issue_history)
-      post :create, format:'json', issue_history:{ issue_type:issue_history.issue_type, issue_date:issue_history.issue_date, return_date:issue_history.return_date, member_id:issue_history.member_id, book_id:issue_history.book_id }
+      member = FactoryGirl.create(:member)
+      book = FactoryGirl.create(:book)
+      post :create, format:'json', issue_history:{ issue_type:'rent', issue_date:'2017-08-13', return_date:'2017-09-13', member_id:member.id, book_id:book.id }
       response.should have_http_status(:ok)
     end
     it 'should not be a valid Create Action' do 
-      issue_history = FactoryGirl.create(:issue_history)
       post :create, format:'json', issue_history:{ issue_type:'', issue_date:'', return_date:'', member_id:'', book_id:'' }
       response.should have_http_status(:unprocessable_entity)
     end

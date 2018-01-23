@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'autoprefixer-rails'
-gem 'bootstrap-sass', '~> 3.2.0'
 gem 'factory_girl_rails', '~> 4.5'
+gem 'sass'
 gem 'faker', '~>1.8.7'
+gem 'coffee-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'mysql2', '>= 0.3.13', '< 0.5'

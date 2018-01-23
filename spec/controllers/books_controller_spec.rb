@@ -46,12 +46,12 @@ RSpec.describe BooksController, type: :controller do
 
   context 'POST' do 
     it 'should be a valid Create Action' do
-      book = FactoryGirl.create(:book)
-      post :create, format:'json', book:{ name:book.name , author:book.author, isbn:book.isbn, price:book.price, publication:book.publication, version:book.version, no_of_copies:book.no_of_copies, library_id:book.library_id, category_id:book.category_id }
+      library = FactoryGirl.create(:library)
+      category = FactoryGirl.create(:category)
+      post :create, format:'json', book:{ name:'Physics II' , author:'HC Verma', isbn:'672917', price:'799', publication:'Goyal Brothers', version:'first', no_of_copies: '50', library_id:library.id, category_id:category.id }
       response.should have_http_status(:ok)
     end
     it 'should not be a valid Create Action' do 
-      book = FactoryGirl.create(:book)
       post :create, format:'json', book:{ name:'', author:'', isbn:'', price:'', publication:'', version:'', no_of_copies:'', library_id:'', category_id:'' }
       response.should have_http_status(:unprocessable_entity)
     end

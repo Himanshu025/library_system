@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+10.times do 
+ Library.create({name: Faker::Company.name, address: Faker::Address.street_address, phone: Faker::PhoneNumber.cell_phone})
+end

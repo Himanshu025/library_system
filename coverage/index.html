@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-01-18T14:27:14+05:30">2018-01-18T14:27:14+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-01-19T16:52:04+05:30">2018-01-19T16:52:04+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.33
+         2.28
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>40</b> files in total.
-    <b>930</b> relevant lines. 
-    <span class="green"><b>930</b> lines covered</span> and
+    <b>925</b> relevant lines. 
+    <span class="green"><b>925</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -313,9 +313,9 @@
       <tr>
         <td class="strong"><a href="#a3945ccb747834d146937932e695d5e52dbec1cc" class="src_link" title="spec/controllers/categories_controller_spec.rb">spec/controllers/categories_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>95</td>
-        <td>70</td>
-        <td>70</td>
+        <td>93</td>
+        <td>68</td>
+        <td>68</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -333,9 +333,9 @@
       <tr>
         <td class="strong"><a href="#e6f1a45b9e7fba8cc85caca87edd6b624268d7b9" class="src_link" title="spec/controllers/libraries_controller_spec.rb">spec/controllers/libraries_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>95</td>
-        <td>70</td>
-        <td>70</td>
+        <td>93</td>
+        <td>68</td>
+        <td>68</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -343,9 +343,9 @@
       <tr>
         <td class="strong"><a href="#56f1245af428f8aee24dcac67a234b879355261e" class="src_link" title="spec/controllers/members_controller_spec.rb">spec/controllers/members_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>95</td>
-        <td>70</td>
-        <td>70</td>
+        <td>94</td>
+        <td>69</td>
+        <td>69</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -357,7 +357,7 @@
         <td>12</td>
         <td>12</td>
         <td>0</td>
-        <td>10.7</td>
+        <td>10.2</td>
       </tr>
       
       <tr>
@@ -377,7 +377,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>7.3</td>
+        <td>6.8</td>
       </tr>
       
       <tr>
@@ -387,7 +387,7 @@
         <td>6</td>
         <td>6</td>
         <td>0</td>
-        <td>69.8</td>
+        <td>66.8</td>
       </tr>
       
       <tr>
@@ -397,7 +397,7 @@
         <td>11</td>
         <td>11</td>
         <td>0</td>
-        <td>43.1</td>
+        <td>40.9</td>
       </tr>
       
       <tr>
@@ -5201,8 +5201,8 @@
     <h3>spec/controllers/categories_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>70</b> relevant lines. 
-      <span class="green"><b>70</b> lines covered</span> and
+      <b>68</b> relevant lines. 
+      <span class="green"><b>68</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5501,280 +5501,268 @@
         <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby">      category = FactoryGirl.create(:category)</code>
+          <code class="ruby">      post :create, format:&#39;json&#39;, category:{ name:&#39;Physics&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, format:&#39;json&#39;, category:{ name:category.name }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
-          
           <code class="ruby">      response.should have_http_status(:ok)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
+        <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should not be a valid Create Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="54">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      category = FactoryGirl.create(:category)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="55">
+        <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
           <code class="ruby">      post :create, format:&#39;json&#39;, category:{ name:&#39;&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="58">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="59">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
+        <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
           <code class="ruby">  context &#39;PUT&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
+        <li class="covered" data-hits="1" data-linenumber="59">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should be a valid Update Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="62">
+        <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
           <code class="ruby">      category = FactoryGirl.create(:category)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
+        <li class="covered" data-hits="1" data-linenumber="61">
           <span class="hits">1</span>
           
           <code class="ruby">      put :update, format:&#39;json&#39;, id:category.id, category:{ name:category.name }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
+        <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:ok)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
           <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      category = FactoryGirl.create(:category)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
+          <code class="ruby">      put :update, format:&#39;json&#39;, id:category.id, category:{ name:&#39;&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
-          <code class="ruby">      category = FactoryGirl.create(:category)</code>
+          <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="68">
           
-          <code class="ruby">      put :update, format:&#39;json&#39;, id:category.id, category:{ name:&#39;&#39; }</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="69">
           <span class="hits">1</span>
           
-          <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
+          <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      category = FactoryGirl.create(:category)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="71">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
+          <code class="ruby">      put :update, format:&#39;json&#39;, id:&#39;&#39;, category:{ name:&#39;&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="72">
           <span class="hits">1</span>
           
-          <code class="ruby">      category = FactoryGirl.create(:category)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="73">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      put :update, format:&#39;json&#39;, id:&#39;&#39;, category:{ name:&#39;&#39; }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="74">
-          <span class="hits">1</span>
-          
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="75">
+        <li class="never" data-hits="" data-linenumber="73">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="75">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="78">
+        <li class="covered" data-hits="1" data-linenumber="76">
           <span class="hits">1</span>
           
           <code class="ruby">  context &#39;DELETE&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="79">
+        <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should be a valid Destroy Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="80">
+        <li class="covered" data-hits="1" data-linenumber="78">
           <span class="hits">1</span>
           
           <code class="ruby">      category = FactoryGirl.create(:category)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="81">
+        <li class="covered" data-hits="1" data-linenumber="79">
           <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:category.id </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="82">
+        <li class="covered" data-hits="1" data-linenumber="80">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:ok)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="83">
+        <li class="never" data-hits="" data-linenumber="81">
           
           
           <code class="ruby">    end  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="84">
+        <li class="covered" data-hits="1" data-linenumber="82">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should not be a valid Destroy Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="85">
+        <li class="covered" data-hits="1" data-linenumber="83">
           <span class="hits">1</span>
           
           <code class="ruby">      category = FactoryGirl.create(:category)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="86">
+        <li class="covered" data-hits="1" data-linenumber="84">
           <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:&#39;hahjahka&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="87">
+        <li class="covered" data-hits="1" data-linenumber="85">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
+        <li class="never" data-hits="" data-linenumber="86">
           
           
           <code class="ruby">    end </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="89">
+        <li class="covered" data-hits="1" data-linenumber="87">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should be a valid Destroy Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="90">
+        <li class="covered" data-hits="1" data-linenumber="88">
           <span class="hits">1</span>
           
           <code class="ruby">      category = FactoryGirl.create(:category)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="91">
+        <li class="covered" data-hits="1" data-linenumber="89">
           <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:&#39;&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="92">
+        <li class="covered" data-hits="1" data-linenumber="90">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="93">
+        <li class="never" data-hits="" data-linenumber="91">
           
           
           <code class="ruby">    end </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="94">
+        <li class="never" data-hits="" data-linenumber="92">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="95">
+        <li class="never" data-hits="" data-linenumber="93">
           
           
           <code class="ruby">end</code>
@@ -6090,37 +6078,37 @@
         <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby">      issue_history = FactoryGirl.create(:issue_history)</code>
+          <code class="ruby">      member = FactoryGirl.create(:member)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, format:&#39;json&#39;, issue_history:{ issue_type:issue_history.issue_type, issue_date:issue_history.issue_date, return_date:issue_history.return_date, member_id:issue_history.member_id, book_id:issue_history.book_id }</code>
+          <code class="ruby">      book = FactoryGirl.create(:book)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="51">
           <span class="hits">1</span>
           
+          <code class="ruby">      post :create, format:&#39;json&#39;, issue_history:{ issue_type:&#39;rent&#39;, issue_date:&#39;2017-08-13&#39;, return_date:&#39;2017-09-13&#39;, member_id:member.id, book_id:book.id }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
+          
           <code class="ruby">      response.should have_http_status(:ok)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &#39;should not be a valid Create Action&#39; do </code>
-        </li>
-      
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">      issue_history = FactoryGirl.create(:issue_history)</code>
+          <code class="ruby">    it &#39;should not be a valid Create Action&#39; do </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="55">
@@ -6379,8 +6367,8 @@
     <h3>spec/controllers/libraries_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>70</b> relevant lines. 
-      <span class="green"><b>70</b> lines covered</span> and
+      <b>68</b> relevant lines. 
+      <span class="green"><b>68</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -6679,280 +6667,268 @@
         <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby">      library = FactoryGirl.create(:library)</code>
+          <code class="ruby">      post :create, format:&#39;json&#39;, library:{ name:&#39;Birla Library&#39;, address:&#39;156, Tagore Nagr,Hiran Magri&#39;, phone:&#39;029445451678&#39;}</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, format:&#39;json&#39;, library:{ name:library.name , address:library.address, phone:library.phone}</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
-          
           <code class="ruby">      response.should have_http_status(:ok)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
+        <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should not be a valid Create Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="54">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      library = FactoryGirl.create(:library)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="55">
+        <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
           <code class="ruby">      post :create, format:&#39;json&#39;, library:{ name:&#39;&#39;, address:&#39;&#39;, phone:&#39;&#39;}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="58">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="59">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
+        <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
           <code class="ruby">  context &#39;PUT&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
+        <li class="covered" data-hits="1" data-linenumber="59">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should be a valid Update Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="62">
+        <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
           <code class="ruby">      library = FactoryGirl.create(:library)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
+        <li class="covered" data-hits="1" data-linenumber="61">
           <span class="hits">1</span>
           
           <code class="ruby">      put :update, format:&#39;json&#39;, id:library.id, library:{ name:library.name, address:library.address, phone:library.phone}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
+        <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:ok)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
           <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      library = FactoryGirl.create(:library)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
+          <code class="ruby">      put :update, format:&#39;json&#39;, id:library.id, library:{ name:&#39;&#39;, address:&#39;&#39;, phone:&#39;&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
-          <code class="ruby">      library = FactoryGirl.create(:library)</code>
+          <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="68">
           
-          <code class="ruby">      put :update, format:&#39;json&#39;, id:library.id, library:{ name:&#39;&#39;, address:&#39;&#39;, phone:&#39;&#39; }</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="69">
           <span class="hits">1</span>
           
-          <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
+          <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      library = FactoryGirl.create(:library)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="71">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
+          <code class="ruby">      put :update, format:&#39;json&#39;, id:&#39;&#39;, library:{ name:&#39;&#39;, address:&#39;&#39;, phone:&#39;&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="72">
           <span class="hits">1</span>
           
-          <code class="ruby">      library = FactoryGirl.create(:library)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="73">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      put :update, format:&#39;json&#39;, id:&#39;&#39;, library:{ name:&#39;&#39;, address:&#39;&#39;, phone:&#39;&#39; }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="74">
-          <span class="hits">1</span>
-          
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="75">
+        <li class="never" data-hits="" data-linenumber="73">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="75">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="78">
+        <li class="covered" data-hits="1" data-linenumber="76">
           <span class="hits">1</span>
           
           <code class="ruby">  context &#39;DELETE&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="79">
+        <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should be a valid Destroy Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="80">
+        <li class="covered" data-hits="1" data-linenumber="78">
           <span class="hits">1</span>
           
           <code class="ruby">      library = FactoryGirl.create(:library)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="81">
+        <li class="covered" data-hits="1" data-linenumber="79">
           <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:library.id </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="82">
+        <li class="covered" data-hits="1" data-linenumber="80">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:ok)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="83">
+        <li class="never" data-hits="" data-linenumber="81">
           
           
           <code class="ruby">    end  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="84">
+        <li class="covered" data-hits="1" data-linenumber="82">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should not be a valid Destroy Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="85">
+        <li class="covered" data-hits="1" data-linenumber="83">
           <span class="hits">1</span>
           
           <code class="ruby">      library = FactoryGirl.create(:library)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="86">
+        <li class="covered" data-hits="1" data-linenumber="84">
           <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:&#39;hahjahka&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="87">
+        <li class="covered" data-hits="1" data-linenumber="85">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
+        <li class="never" data-hits="" data-linenumber="86">
           
           
           <code class="ruby">    end </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="89">
+        <li class="covered" data-hits="1" data-linenumber="87">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should be a valid Destroy Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="90">
+        <li class="covered" data-hits="1" data-linenumber="88">
           <span class="hits">1</span>
           
           <code class="ruby">      library = FactoryGirl.create(:library)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="91">
+        <li class="covered" data-hits="1" data-linenumber="89">
           <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:&#39;&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="92">
+        <li class="covered" data-hits="1" data-linenumber="90">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="93">
+        <li class="never" data-hits="" data-linenumber="91">
           
           
           <code class="ruby">    end </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="94">
+        <li class="never" data-hits="" data-linenumber="92">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="95">
+        <li class="never" data-hits="" data-linenumber="93">
           
           
           <code class="ruby">end</code>
@@ -6968,8 +6944,8 @@
     <h3>spec/controllers/members_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>70</b> relevant lines. 
-      <span class="green"><b>70</b> lines covered</span> and
+      <b>69</b> relevant lines. 
+      <span class="green"><b>69</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -7268,13 +7244,13 @@
         <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby">      member = FactoryGirl.create(:member)</code>
+          <code class="ruby">      library = FactoryGirl.create(:library)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, format:&#39;json&#39;, member:{ name: member.name, phone: member.phone, address: member.address, gender: member.gender, validity_date: member.validity_date, code: member.code, is_author: member.is_author, library_id: member.library_id }</code>
+          <code class="ruby">      post :create, format:&#39;json&#39;, member:{ name: &#39;himanshu&#39;, phone: &#39;9027909087&#39;, address: &#39;789, tagore nagar, hiran masgri&#39;, gender: &#39;male&#39;, validity_date: &#39;2016-08-25&#39;, code: &#39;X1023&#39;, is_author: &#39;true&#39;, library_id: library.id }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="51">
@@ -7298,250 +7274,244 @@
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">      member = FactoryGirl.create(:member)</code>
+          <code class="ruby">      post :create, format:&#39;json&#39;, member:{ name:&#39;&#39;, phone:&#39;&#39;, address:&#39;&#39;, gender:&#39;&#39;, validity_date:&#39;&#39;, code:&#39;&#39;, is_author:&#39;&#39;, library_id:&#39;&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="55">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, format:&#39;json&#39;, member:{ name:&#39;&#39;, phone:&#39;&#39;, address:&#39;&#39;, gender:&#39;&#39;, validity_date:&#39;&#39;, code:&#39;&#39;, is_author:&#39;&#39;, library_id:&#39;&#39; }</code>
+          <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="56">
           
-          <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="59">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
+        <li class="covered" data-hits="1" data-linenumber="59">
           <span class="hits">1</span>
           
           <code class="ruby">  context &#39;PUT&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
+        <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should be a valid Update Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="62">
+        <li class="covered" data-hits="1" data-linenumber="61">
           <span class="hits">1</span>
           
           <code class="ruby">      member = FactoryGirl.create(:member)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
+        <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
           <code class="ruby">      put :update, format:&#39;json&#39;, id:member.id, member:{ name: member.name, phone: member.phone, address: member.address, gender: member.gender, validity_date: member.validity_date, code: member.code, is_author: member.is_author, library_id: member.library_id }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
+        <li class="covered" data-hits="1" data-linenumber="63">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:ok)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
+          <code class="ruby">      member = FactoryGirl.create(:member)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
-          <code class="ruby">      member = FactoryGirl.create(:member)</code>
+          <code class="ruby">      put :update, format:&#39;json&#39;, id:member.id, member:{ name:&#39;&#39;, phone: &#39;&#39;, address:&#39;&#39;, gender:&#39;&#39;, validity_date:&#39;&#39;, code:&#39;&#39;, is_author:&#39;&#39;, library_id:&#39;&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="68">
           <span class="hits">1</span>
           
-          <code class="ruby">      put :update, format:&#39;json&#39;, id:member.id, member:{ name:&#39;&#39;, phone: &#39;&#39;, address:&#39;&#39;, gender:&#39;&#39;, validity_date:&#39;&#39;, code:&#39;&#39;, is_author:&#39;&#39;, library_id:&#39;&#39; }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="69">
-          <span class="hits">1</span>
-          
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="71">
+        <li class="covered" data-hits="1" data-linenumber="70">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should not be a valid Update Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="72">
+        <li class="covered" data-hits="1" data-linenumber="71">
           <span class="hits">1</span>
           
           <code class="ruby">      member = FactoryGirl.create(:member)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="73">
+        <li class="covered" data-hits="1" data-linenumber="72">
           <span class="hits">1</span>
           
           <code class="ruby">      put :update, format:&#39;json&#39;, id:&#39;&#39;, member:{ name:&#39;&#39;, phone: &#39;&#39;, address:&#39;&#39;, gender:&#39;&#39;, validity_date:&#39;&#39;, code:&#39;&#39;, is_author:&#39;&#39;, library_id:&#39;&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="74">
+        <li class="covered" data-hits="1" data-linenumber="73">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="75">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="75">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="76">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="78">
+        <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
           <code class="ruby">  context &#39;DELETE&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="79">
+        <li class="covered" data-hits="1" data-linenumber="78">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should be a valid Destroy Action&#39; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      member = FactoryGirl.create(:member)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="80">
           <span class="hits">1</span>
           
-          <code class="ruby">      member = FactoryGirl.create(:member)</code>
+          <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:member.id </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="81">
           <span class="hits">1</span>
           
-          <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:member.id </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="82">
-          <span class="hits">1</span>
-          
           <code class="ruby">      response.should have_http_status(:ok)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="83">
+        <li class="never" data-hits="" data-linenumber="82">
           
           
           <code class="ruby">    end  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="84">
+        <li class="covered" data-hits="1" data-linenumber="83">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should not be a valid Destroy Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="85">
+        <li class="covered" data-hits="1" data-linenumber="84">
           <span class="hits">1</span>
           
           <code class="ruby">      member = FactoryGirl.create(:member)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="86">
+        <li class="covered" data-hits="1" data-linenumber="85">
           <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:&#39;hahjahka&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="87">
+        <li class="covered" data-hits="1" data-linenumber="86">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
+        <li class="never" data-hits="" data-linenumber="87">
           
           
           <code class="ruby">    end </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="89">
+        <li class="covered" data-hits="1" data-linenumber="88">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should be a valid Destroy Action&#39; do </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="90">
+        <li class="covered" data-hits="1" data-linenumber="89">
           <span class="hits">1</span>
           
           <code class="ruby">      member = FactoryGirl.create(:member)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="91">
+        <li class="covered" data-hits="1" data-linenumber="90">
           <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:&#39;&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="92">
+        <li class="covered" data-hits="1" data-linenumber="91">
           <span class="hits">1</span>
           
           <code class="ruby">      response.should have_http_status(:unprocessable_entity)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="93">
+        <li class="never" data-hits="" data-linenumber="92">
           
           
           <code class="ruby">    end </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="94">
+        <li class="never" data-hits="" data-linenumber="93">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="95">
+        <li class="never" data-hits="" data-linenumber="94">
           
           
           <code class="ruby">end</code>
@@ -7626,14 +7596,14 @@
           <code class="ruby">    no_of_copies Faker::Number.between(1, 20)</code>
         </li>
       
-        <li class="covered" data-hits="59" data-linenumber="11">
-          <span class="hits">59</span>
+        <li class="covered" data-hits="56" data-linenumber="11">
+          <span class="hits">56</span>
           
           <code class="ruby">    library_id { FactoryGirl.create(:library).id }</code>
         </li>
       
-        <li class="covered" data-hits="59" data-linenumber="12">
-          <span class="hits">59</span>
+        <li class="covered" data-hits="56" data-linenumber="12">
+          <span class="hits">56</span>
           
           <code class="ruby">    category_id { FactoryGirl.create(:category).id}</code>
         </li>
@@ -7760,14 +7730,14 @@
           <code class="ruby">    return_date Faker::Date.between(2.days.ago, Date.today).strftime(&quot;%F&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="7">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="24" data-linenumber="7">
+          <span class="hits">24</span>
           
           <code class="ruby">    member_id { FactoryGirl.create(:member).id }</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="8">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="24" data-linenumber="8">
+          <span class="hits">24</span>
           
           <code class="ruby">    book_id { FactoryGirl.create(:book).id }</code>
         </li>
@@ -7821,20 +7791,20 @@
           <code class="ruby">  factory :library do</code>
         </li>
       
-        <li class="covered" data-hits="139" data-linenumber="4">
-          <span class="hits">139</span>
+        <li class="covered" data-hits="133" data-linenumber="4">
+          <span class="hits">133</span>
           
           <code class="ruby">    name { Faker::Company.name }</code>
         </li>
       
-        <li class="covered" data-hits="139" data-linenumber="5">
-          <span class="hits">139</span>
+        <li class="covered" data-hits="133" data-linenumber="5">
+          <span class="hits">133</span>
           
           <code class="ruby">    address { Faker::Address.street_address }</code>
         </li>
       
-        <li class="covered" data-hits="138" data-linenumber="6">
-          <span class="hits">138</span>
+        <li class="covered" data-hits="132" data-linenumber="6">
+          <span class="hits">132</span>
           
           <code class="ruby">    phone { Faker::Number.number(10) }</code>
         </li>
@@ -7888,50 +7858,50 @@
           <code class="ruby">  factory :member do</code>
         </li>
       
-        <li class="covered" data-hits="59" data-linenumber="4">
-          <span class="hits">59</span>
+        <li class="covered" data-hits="56" data-linenumber="4">
+          <span class="hits">56</span>
           
           <code class="ruby">    name { Faker::Name.name_with_middle }</code>
         </li>
       
-        <li class="covered" data-hits="58" data-linenumber="5">
-          <span class="hits">58</span>
+        <li class="covered" data-hits="55" data-linenumber="5">
+          <span class="hits">55</span>
           
           <code class="ruby">    phone { Faker::Number.number(10) }</code>
         </li>
       
-        <li class="covered" data-hits="59" data-linenumber="6">
-          <span class="hits">59</span>
+        <li class="covered" data-hits="56" data-linenumber="6">
+          <span class="hits">56</span>
           
           <code class="ruby">    address { Faker::Address.street_address }</code>
         </li>
       
-        <li class="covered" data-hits="60" data-linenumber="7">
-          <span class="hits">60</span>
+        <li class="covered" data-hits="57" data-linenumber="7">
+          <span class="hits">57</span>
           
           <code class="ruby">    gender { Faker::Boolean.boolean(1) }</code>
         </li>
       
-        <li class="covered" data-hits="59" data-linenumber="8">
-          <span class="hits">59</span>
+        <li class="covered" data-hits="56" data-linenumber="8">
+          <span class="hits">56</span>
           
           <code class="ruby">    validity_date { Faker::Date.between(2.days.ago, Date.today).strftime(&quot;%F&quot;) }</code>
         </li>
       
-        <li class="covered" data-hits="60" data-linenumber="9">
-          <span class="hits">60</span>
+        <li class="covered" data-hits="57" data-linenumber="9">
+          <span class="hits">57</span>
           
           <code class="ruby">    code { Faker::Number.number(4) }</code>
         </li>
       
-        <li class="covered" data-hits="60" data-linenumber="10">
-          <span class="hits">60</span>
+        <li class="covered" data-hits="57" data-linenumber="10">
+          <span class="hits">57</span>
           
           <code class="ruby">    is_author { Faker::Boolean.boolean(1) }</code>
         </li>
       
-        <li class="covered" data-hits="56" data-linenumber="11">
-          <span class="hits">56</span>
+        <li class="covered" data-hits="53" data-linenumber="11">
+          <span class="hits">53</span>
           
           <code class="ruby">    library_id { FactoryGirl.create(:library).id }</code>
         </li>
