@@ -14,7 +14,7 @@ RSpec.describe LibrariesController, type: :controller do
     end
     it 'should not be a valid Show Action' do 
       library = FactoryGirl.create(:library)
-      get :show, id:'bnabnban', format:'json'
+      get :show, id:Faker::Company.name, format:'json'
       response.should have_http_status(:unprocessable_entity)
     end
     it 'should be a valid New Action' do 
@@ -34,7 +34,7 @@ RSpec.describe LibrariesController, type: :controller do
     end
     it 'should not be a valid Edit Action' do 
       library = FactoryGirl.create(:library)
-      get :edit, id:'1bdsb' , format:'json', library:{ name:'', address:'',phone:'' }
+      get :edit, id:Faker::Company.name , format:'json', library:{ name:'', address:'',phone:'' }
       response.should have_http_status(:unprocessable_entity)
     end 
     it 'should not be a valid Edit Action' do 
@@ -46,7 +46,7 @@ RSpec.describe LibrariesController, type: :controller do
 
   context 'POST' do 
     it 'should be a valid Create Action' do
-      post :create, format:'json', library:{ name:'Birla Library', address:'156, Tagore Nagr,Hiran Magri', phone:'029445451678'}
+      post :create, format:'json', library:{ name:Faker::Company.name, address:Faker::Address.street_address, phone:Faker::Number.number(10)}
       response.should have_http_status(:ok)
     end
     it 'should not be a valid Create Action' do 
@@ -81,7 +81,7 @@ RSpec.describe LibrariesController, type: :controller do
     end  
     it 'should not be a valid Destroy Action' do 
       library = FactoryGirl.create(:library)
-      delete :destroy, format:'json', id:'hahjahka'
+      delete :destroy, format:'json', id:Faker::Company.name
       response.should have_http_status(:unprocessable_entity)
     end 
     it 'should be a valid Destroy Action' do 

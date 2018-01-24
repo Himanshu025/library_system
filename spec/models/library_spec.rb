@@ -11,7 +11,7 @@ RSpec.describe Library, type: :model do
       library.should_not be_valid
     end
     it 'should not have name length less than 2' do
-      library = build(:library, name: 'a')
+      library = build(:library, name: Faker::Number.number(1))
       library.should_not be_valid
     end
     it 'should not have empty address' do
@@ -19,7 +19,7 @@ RSpec.describe Library, type: :model do
       library.should_not be_valid
     end
     it 'should not have address length less than 7' do
-      library = build(:library, address: 'hsd')
+      library = build(:library, address: Faker::Number.number(2))
       library.should_not be_valid
     end
     it 'should not have empty phone number' do
@@ -27,11 +27,11 @@ RSpec.describe Library, type: :model do
       library.should_not be_valid
     end
     it 'should not have phone number length less than 5' do
-      library = build(:library, phone: '65')
+      library = build(:library, phone: Faker::Number.number(2))
       library.should_not be_valid
     end
     it 'should not have phone number length more than 15' do
-      library = build(:library, phone: '000098765443345689')
+      library = build(:library, phone: Faker::Number.number(20))
       library.should_not be_valid
     end
   end

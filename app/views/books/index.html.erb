@@ -1,24 +1,11 @@
 <html>
   <head>
-	  <script src = "/assets/libraries/show.js"></script>
+    <style src="/assets/stylesheets/book.css"></style>
   </head>
   <body>
-    <div id="show_div" >
-  	  <header class="header">
-        <h1 id="heading" ></h1>
-      </header>
-      <table  class="table"> 
-        <tr>
-          <th>ADDRESS</th>
-          <th>PHONE</th>
-        </tr>
-        <tr hidden="true" id="template">
-          <td id="address"></td>
-          <td id="phone"></td>
-        </tr>
-      </table>
-      <h2 id="heading">BOOKS</h2>
-      <form  style="display:none" id="add_new_form">
+	  <div id= "index_div">
+	  	<h2 id="heading">Listing Books</h2>
+	  	<form  style="display:none" id="add_new_form">
         name:<br>
         <input type="text" id='name' name="book[name]"><br>
         author:<br>
@@ -39,8 +26,8 @@
         <input type="text" id='phone'name="book[library_id]"><br>
         <input type="submit" value="Submit">
       </form>
-      <button id="add_book"></button>
-      <table class="book">
+  		<button id="add_book">Add Book</button>
+  		<table class="table">
         <tr>
           <th>NAME</th>
           <th>AUTHOR</th>
@@ -50,7 +37,7 @@
           <th>VERSION</th>
           <th>NO OF COPIES</th>
         </tr>
-        <tr hidden="true" id="book_template">
+        <tr  id="book_template">
           <td id="book_name" ></td>
           <td id="book_author"></td>
           <td id="book_isbn"></td>
@@ -60,6 +47,6 @@
           <td id="book_no_of_copies"></td>
         </tr>
       </table>
-    </div>
+	  </div>
   </body>
 </html>

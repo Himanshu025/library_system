@@ -16,6 +16,7 @@ $("document").ready(function(){
 			table.find("#show").html("<a id='show_library' href='/libraries/"+ data.libraries[i].id+"'>Show</a>");
 			table.find("#edit").html("<button id='edit_library' onclick =edit_library(" + data.libraries[i].id + ") >Edit</button>");
 			table.find("#delete").html("<button id='delete_library' onclick = delete_library(" + data.libraries[i].id +") >Delete</button>");
+			table.removeAttr("hidden");
 			$(".table").append(table);
 		}
 	})

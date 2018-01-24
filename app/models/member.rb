@@ -8,6 +8,7 @@ class Member < ActiveRecord::Base
   enum gender: { male: true, female: false }
   validates :code, presence: true
   validates :validity_date, presence: true, format: { with: /\A\d{4}\-(?:0?[1-9]|1[0-2])\-(?:0?[1-9]|[1-2]\d|3[01])\Z/ }
+  enum is_author: { yes: true, no: false }
   validates :is_author, presence: true
   validates :library_id, presence: true, numericality: true
 end

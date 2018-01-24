@@ -27,7 +27,7 @@ RSpec.describe Book, type: :model do
       book.should_not be_valid
     end
     it 'should not have invalid price' do
-      book = build(:book, price: 'a')
+      book = build(:book, price: Faker::Name.name)
       book.should_not be_valid
     end
     it 'should not have empty publication' do
@@ -43,7 +43,7 @@ RSpec.describe Book, type: :model do
       book.should_not be_valid
     end
     it 'should not have invalid no. of copies' do
-      book = build(:book, no_of_copies: 'a')
+      book = build(:book, no_of_copies: Faker::Name.name)
       book.should_not be_valid
     end
     it 'should not have empty library id' do
@@ -51,7 +51,7 @@ RSpec.describe Book, type: :model do
       book.should_not be_valid
     end
     it 'should not have invalid library id' do
-      book = build(:book, library_id: 'amadn')
+      book = build(:book, library_id: Faker::Name.name)
       book.should_not be_valid
     end
     it 'should not have empty category id' do
@@ -59,7 +59,7 @@ RSpec.describe Book, type: :model do
       book.should_not be_valid
     end
     it 'should not have invalid category id' do
-      book = build(:book, category_id: 'jerry')
+      book = build(:book, category_id: Faker::Name.name)
       book.should_not be_valid
     end
   end

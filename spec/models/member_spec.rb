@@ -11,7 +11,7 @@ RSpec.describe Member, type: :model do
       member.should_not be_valid
     end
     it 'should not have name length less than 3' do
-      member = build(:member, name: 'aa')
+      member = build(:member, name: Faker::Number.number(1))
       member.should_not be_valid
     end
     it 'should not have empty address' do
@@ -19,7 +19,7 @@ RSpec.describe Member, type: :model do
       member.should_not be_valid
     end
     it 'should not have address length less than 3' do
-      member = build(:member, address: 'aa')
+      member = build(:member, address: Faker::Number.number(1))
       member.should_not be_valid
     end
     it 'should not have empty phone' do
@@ -27,11 +27,11 @@ RSpec.describe Member, type: :model do
       member.should_not be_valid
     end
     it 'should not have phone less than 7' do
-      member = build(:member, phone: '1234')
+      member = build(:member, phone: Faker::Number.number(2))
       member.should_not be_valid
     end
     it 'should not have phone more than 12' do
-      member = build(:member, phone: '0909090909000900009090')
+      member = build(:member, phone: Faker::Number.number(20))
       member.should_not be_valid
     end
     it 'should not have empty is gender' do
@@ -47,7 +47,7 @@ RSpec.describe Member, type: :model do
       member.should_not be_valid
     end
     it 'should not have invalide validity date' do
-      member = build(:member, validity_date: 'poiuytre')
+      member = build(:member, validity_date: Faker::Number.number(2))
       member.should_not be_valid
     end
     it 'should not have empty is author' do
@@ -59,7 +59,7 @@ RSpec.describe Member, type: :model do
       member.should_not be_valid
     end
     it 'should not have invalid library id' do
-      member = build(:member, library_id: 'asas')
+      member = build(:member, library_id: Faker::Name.name)
       member.should_not be_valid
     end
   end

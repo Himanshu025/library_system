@@ -14,7 +14,7 @@ RSpec.describe CategoriesController, type: :controller do
     end
     it 'should not be a valid Show Action' do 
       category = FactoryGirl.create(:category)
-      get :show, id:'bnabnban', format:'json'
+      get :show, id:Faker::Name.name, format:'json'
       response.should have_http_status(:unprocessable_entity)
     end
     it 'should be a valid New Action' do 
@@ -34,7 +34,7 @@ RSpec.describe CategoriesController, type: :controller do
     end
     it 'should not be a valid Edit Action' do 
       category = FactoryGirl.create(:category)
-      get :edit, id:'ahjkh' , format:'json', category:{ name:'' }
+      get :edit, id:Faker::Name.name , format:'json', category:{ name:'' }
       response.should have_http_status(:unprocessable_entity)
     end 
     it 'should not be a valid Edit Action' do 
@@ -46,7 +46,7 @@ RSpec.describe CategoriesController, type: :controller do
 
   context 'POST' do 
     it 'should be a valid Create Action' do
-      post :create, format:'json', category:{ name:'Physics' }
+      post :create, format:'json', category:{ name:Faker::Book.genre }
       response.should have_http_status(:ok)
     end
     it 'should not be a valid Create Action' do 
@@ -81,7 +81,7 @@ RSpec.describe CategoriesController, type: :controller do
     end  
     it 'should not be a valid Destroy Action' do 
       category = FactoryGirl.create(:category)
-      delete :destroy, format:'json', id:'hahjahka'
+      delete :destroy, format:'json', id:Faker::Book.genre
       response.should have_http_status(:unprocessable_entity)
     end 
     it 'should be a valid Destroy Action' do 

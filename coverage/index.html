@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-01-19T16:52:04+05:30">2018-01-19T16:52:04+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-01-24T08:13:48+05:30">2018-01-24T08:13:48+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.28
+         2.27
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>40</b> files in total.
-    <b>925</b> relevant lines. 
-    <span class="green"><b>925</b> lines covered</span> and
+    <b>926</b> relevant lines. 
+    <span class="green"><b>926</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -163,9 +163,9 @@
       <tr>
         <td class="strong"><a href="#828bf81d39c71efbd59ad45898e89b409516c08f" class="src_link" title="app/models/member.rb">app/models/member.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>14</td>
         <td>13</td>
-        <td>12</td>
-        <td>12</td>
+        <td>13</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -2605,7 +2605,7 @@
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">        format.html  </code>
+          <code class="ruby">        format.html {redirect_to libraries_path }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
@@ -3908,8 +3908,8 @@
     <h3>app/models/member.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
+      <b>13</b> relevant lines. 
+      <span class="green"><b>13</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3980,16 +3980,22 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :is_author, presence: true</code>
+          <code class="ruby">  enum is_author: { yes: true, no: false }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
+          <code class="ruby">  validates :is_author, presence: true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
           <code class="ruby">  validates :library_id, presence: true, numericality: true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">end</code>
@@ -5309,7 +5315,7 @@
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :show, id:&#39;bnabnban&#39;, format:&#39;json&#39;</code>
+          <code class="ruby">      get :show, id:Faker::Name.name, format:&#39;json&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
@@ -5429,7 +5435,7 @@
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :edit, id:&#39;ahjkh&#39; , format:&#39;json&#39;, category:{ name:&#39;&#39; }</code>
+          <code class="ruby">      get :edit, id:Faker::Name.name , format:&#39;json&#39;, category:{ name:&#39;&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
@@ -5501,7 +5507,7 @@
         <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, format:&#39;json&#39;, category:{ name:&#39;Physics&#39; }</code>
+          <code class="ruby">      post :create, format:&#39;json&#39;, category:{ name:Faker::Book.genre }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="50">
@@ -5711,7 +5717,7 @@
         <li class="covered" data-hits="1" data-linenumber="84">
           <span class="hits">1</span>
           
-          <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:&#39;hahjahka&#39;</code>
+          <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:Faker::Book.genre</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="85">
@@ -5886,7 +5892,7 @@
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :show, id:&#39;bnabnban&#39;, format:&#39;json&#39;</code>
+          <code class="ruby">      get :show, id:Faker::Company.name, format:&#39;json&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
@@ -6006,7 +6012,7 @@
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :edit, id: &#39;acas&#39; , format:&#39;json&#39;, issue_history:{ issue_type:&#39;&#39;, issue_date:&#39;&#39;, return_date:&#39;&#39;, member_id:&#39;&#39;, book_id:&#39;&#39; }</code>
+          <code class="ruby">      get :edit, id: Faker::Company.name , format:&#39;json&#39;, issue_history:{ issue_type:&#39;&#39;, issue_date:&#39;&#39;, return_date:&#39;&#39;, member_id:&#39;&#39;, book_id:&#39;&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
@@ -6090,7 +6096,7 @@
         <li class="covered" data-hits="1" data-linenumber="51">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, format:&#39;json&#39;, issue_history:{ issue_type:&#39;rent&#39;, issue_date:&#39;2017-08-13&#39;, return_date:&#39;2017-09-13&#39;, member_id:member.id, book_id:book.id }</code>
+          <code class="ruby">      post :create, format:&#39;json&#39;, issue_history:{ issue_type:&#39;rent&#39;, issue_date:Faker::Date.between(2.days.ago, Date.today).strftime(&quot;%F&quot;), return_date:Faker::Date.between(2.days.ago, Date.today).strftime(&quot;%F&quot;), member_id:member.id, book_id:book.id }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="52">
@@ -6300,7 +6306,7 @@
         <li class="covered" data-hits="1" data-linenumber="86">
           <span class="hits">1</span>
           
-          <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:&#39;hahjahka&#39;</code>
+          <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:Faker::Name.name</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="87">
@@ -6475,7 +6481,7 @@
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :show, id:&#39;bnabnban&#39;, format:&#39;json&#39;</code>
+          <code class="ruby">      get :show, id:Faker::Company.name, format:&#39;json&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
@@ -6595,7 +6601,7 @@
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :edit, id:&#39;1bdsb&#39; , format:&#39;json&#39;, library:{ name:&#39;&#39;, address:&#39;&#39;,phone:&#39;&#39; }</code>
+          <code class="ruby">      get :edit, id:Faker::Company.name , format:&#39;json&#39;, library:{ name:&#39;&#39;, address:&#39;&#39;,phone:&#39;&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
@@ -6667,7 +6673,7 @@
         <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, format:&#39;json&#39;, library:{ name:&#39;Birla Library&#39;, address:&#39;156, Tagore Nagr,Hiran Magri&#39;, phone:&#39;029445451678&#39;}</code>
+          <code class="ruby">      post :create, format:&#39;json&#39;, library:{ name:Faker::Company.name, address:Faker::Address.street_address, phone:Faker::Number.number(10)}</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="50">
@@ -6877,7 +6883,7 @@
         <li class="covered" data-hits="1" data-linenumber="84">
           <span class="hits">1</span>
           
-          <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:&#39;hahjahka&#39;</code>
+          <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:Faker::Company.name</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="85">
@@ -7052,7 +7058,7 @@
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :show, id:&#39;bnabnban&#39;, format:&#39;json&#39;</code>
+          <code class="ruby">      get :show, id:Faker::Company.name, format:&#39;json&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
@@ -7172,7 +7178,7 @@
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :edit, id:&#39;iahs&#39; , format:&#39;json&#39;, member:{ name:&#39;&#39;, phone:&#39;&#39;, address:&#39;&#39;, gender:&#39;&#39;, validity_date:&#39;&#39;, code:&#39;&#39;, is_author:&#39;&#39;, library_id:&#39;&#39; }</code>
+          <code class="ruby">      get :edit, id:Faker::Company.name , format:&#39;json&#39;, member:{ name:&#39;&#39;, phone:&#39;&#39;, address:&#39;&#39;, gender:&#39;&#39;, validity_date:&#39;&#39;, code:&#39;&#39;, is_author:&#39;&#39;, library_id:&#39;&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
@@ -7250,7 +7256,7 @@
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, format:&#39;json&#39;, member:{ name: &#39;himanshu&#39;, phone: &#39;9027909087&#39;, address: &#39;789, tagore nagar, hiran masgri&#39;, gender: &#39;male&#39;, validity_date: &#39;2016-08-25&#39;, code: &#39;X1023&#39;, is_author: &#39;true&#39;, library_id: library.id }</code>
+          <code class="ruby">      post :create, format:&#39;json&#39;, member:{ name: Faker::Name.name_with_middle, phone: Faker::Number.number(10), address: Faker::Address.street_address, gender: Faker::Boolean.boolean(1), validity_date: Faker::Date.between(2.days.ago, Date.today).strftime(&quot;%F&quot;), code: Faker::Number.number(4), is_author: Faker::Boolean.boolean(1), library_id: library.id }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="51">
@@ -7460,7 +7466,7 @@
         <li class="covered" data-hits="1" data-linenumber="85">
           <span class="hits">1</span>
           
-          <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:&#39;hahjahka&#39;</code>
+          <code class="ruby">      delete :destroy, format:&#39;json&#39;, id:Faker::Name.name</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="86">
@@ -8114,7 +8120,7 @@
         <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
-          <code class="ruby">      book = build(:book, price: &#39;a&#39;)</code>
+          <code class="ruby">      book = build(:book, price: Faker::Name.name)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="31">
@@ -8210,7 +8216,7 @@
         <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
-          <code class="ruby">      book = build(:book, no_of_copies: &#39;a&#39;)</code>
+          <code class="ruby">      book = build(:book, no_of_copies: Faker::Name.name)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="47">
@@ -8258,7 +8264,7 @@
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">      book = build(:book, library_id: &#39;amadn&#39;)</code>
+          <code class="ruby">      book = build(:book, library_id: Faker::Name.name)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="55">
@@ -8306,7 +8312,7 @@
         <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
-          <code class="ruby">      book = build(:book, category_id: &#39;jerry&#39;)</code>
+          <code class="ruby">      book = build(:book, category_id: Faker::Name.name)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="63">
@@ -8734,7 +8740,7 @@
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">      issue_history = build(:issue_history, issue_date: &#39;aur bhi har kuch&#39;)</code>
+          <code class="ruby">      issue_history = build(:issue_history, issue_date: Faker::Name.name)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="21">
@@ -8764,7 +8770,7 @@
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">      issue_history = build(:issue_history, return_date: &#39;ye bhi har kuch&#39;)</code>
+          <code class="ruby">      issue_history = build(:issue_history, return_date: Faker::Name.name)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
@@ -8854,7 +8860,7 @@
         <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
-          <code class="ruby">      issue_history = build(:issue_history, member_id: &#39;a&#39;)</code>
+          <code class="ruby">      issue_history = build(:issue_history, member_id: Faker::Name.name)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="41">
@@ -8884,7 +8890,7 @@
         <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
-          <code class="ruby">      issue_history = build(:issue_history, book_id: &#39;a&#39;)</code>
+          <code class="ruby">      issue_history = build(:issue_history, book_id: Faker::Name.name)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="46">
@@ -9095,7 +9101,7 @@
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">      library = build(:library, name: &#39;a&#39;)</code>
+          <code class="ruby">      library = build(:library, name: Faker::Number.number(1))</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
@@ -9143,7 +9149,7 @@
         <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">      library = build(:library, address: &#39;hsd&#39;)</code>
+          <code class="ruby">      library = build(:library, address: Faker::Number.number(2))</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="23">
@@ -9191,7 +9197,7 @@
         <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
-          <code class="ruby">      library = build(:library, phone: &#39;65&#39;)</code>
+          <code class="ruby">      library = build(:library, phone: Faker::Number.number(2))</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="31">
@@ -9215,7 +9221,7 @@
         <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
-          <code class="ruby">      library = build(:library, phone: &#39;000098765443345689&#39;)</code>
+          <code class="ruby">      library = build(:library, phone: Faker::Number.number(20))</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="35">
@@ -9432,7 +9438,7 @@
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">      member = build(:member, name: &#39;aa&#39;)</code>
+          <code class="ruby">      member = build(:member, name: Faker::Number.number(1))</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
@@ -9480,7 +9486,7 @@
         <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">      member = build(:member, address: &#39;aa&#39;)</code>
+          <code class="ruby">      member = build(:member, address: Faker::Number.number(1))</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="23">
@@ -9528,7 +9534,7 @@
         <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
-          <code class="ruby">      member = build(:member, phone: &#39;1234&#39;)</code>
+          <code class="ruby">      member = build(:member, phone: Faker::Number.number(2))</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="31">
@@ -9552,7 +9558,7 @@
         <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
-          <code class="ruby">      member = build(:member, phone: &#39;0909090909000900009090&#39;)</code>
+          <code class="ruby">      member = build(:member, phone: Faker::Number.number(20))</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="35">
@@ -9648,7 +9654,7 @@
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">      member = build(:member, validity_date: &#39;poiuytre&#39;)</code>
+          <code class="ruby">      member = build(:member, validity_date: Faker::Number.number(2))</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="51">
@@ -9720,7 +9726,7 @@
         <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
-          <code class="ruby">      member = build(:member, library_id: &#39;asas&#39;)</code>
+          <code class="ruby">      member = build(:member, library_id: Faker::Name.name)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="63">

@@ -17,12 +17,12 @@ RSpec.describe IssueHistory, type: :model do
     end
 
     it 'should not have invalid issue date' do
-      issue_history = build(:issue_history, issue_date: 'aur bhi har kuch')
+      issue_history = build(:issue_history, issue_date: Faker::Name.name)
       issue_history.should_not be_valid
     end
 
     it 'should not have invalid return date' do
-      issue_history = build(:issue_history, return_date: 'ye bhi har kuch')
+      issue_history = build(:issue_history, return_date: Faker::Name.name)
       issue_history.should_not be_valid
     end
 
@@ -37,12 +37,12 @@ RSpec.describe IssueHistory, type: :model do
     end
 
     it 'should not have invalid member id' do
-      issue_history = build(:issue_history, member_id: 'a')
+      issue_history = build(:issue_history, member_id: Faker::Name.name)
       issue_history.should_not be_valid
     end
 
     it 'should not have invalid book id' do
-      issue_history = build(:issue_history, book_id: 'a')
+      issue_history = build(:issue_history, book_id: Faker::Name.name)
       issue_history.should_not be_valid
     end
   end
