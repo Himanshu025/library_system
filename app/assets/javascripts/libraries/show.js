@@ -57,7 +57,6 @@ function getbooks(id)
 	})
 	.done(function(data1)
 	{
-
 		for (var i = 0; i <data1.books.length; i++) 
 		{ 
 			console.log(id);

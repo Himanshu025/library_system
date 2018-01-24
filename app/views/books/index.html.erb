@@ -1,52 +1,56 @@
 <html>
-  <head>
-    <style src="/assets/stylesheets/book.css"></style>
-  </head>
-  <body>
-	  <div id= "index_div">
-	  	<h2 id="heading">Listing Books</h2>
-	  	<form  style="display:none" id="add_new_form">
-        name:<br>
-        <input type="text" id='name' name="book[name]"><br>
-        author:<br>
-        <input type="text" id='address' name="book[author]"><br>
-        isbn:<br>
-        <input type="text" id='phone'name="book[isbn]"><br>
-        price:<br>
-        <input type="text" id='phone'name="book[price]"><br>
-        publication:<br>
-        <input type="text" id='phone'name="book[publication]"><br>
-        version:<br>
-        <input type="text" id='phone'name="book[version]"><br>
-        no of copies:<br>
-        <input type="text" id='phone'name="book[no_of_copies]"><br>
-        category_id:<br>
-        <input type="text" id='phone'name="book[category_id]"><br>
-        library_id:<br>
-        <input type="text" id='phone'name="book[library_id]"><br>
-        <input type="submit" value="Submit">
-      </form>
-  		<button id="add_book">Add Book</button>
-  		<table class="table">
-        <tr>
-          <th>NAME</th>
-          <th>AUTHOR</th>
-          <th>ISBN</th>
-          <th>PRICE</th>
-          <th>PUBLICATION</th>
-          <th>VERSION</th>
-          <th>NO OF COPIES</th>
-        </tr>
-        <tr  id="book_template">
-          <td id="book_name" ></td>
-          <td id="book_author"></td>
-          <td id="book_isbn"></td>
-          <td id="book_price"></td>
-          <td id="book_publication"></td>
-          <td id="book_version"></td>
-          <td id="book_no_of_copies"></td>
-        </tr>
-      </table>
-	  </div>
-  </body>
+<head>
+  <style src="/assets/stylesheets/book.css"></style>
+</head>
+<body>
+ <div id= "index_div">
+  <h2 id="heading">Listing Books</h2>
+  <form  style="display:none" id="add_new_form">
+    name:<br>
+    <input type="text" id='name' name="book[name]"><br>
+    author:<br>
+    <input type="text" id='address' name="book[author]"><br>
+    isbn:<br>
+    <input type="text" id='isbn'name="book[isbn]"><br>
+    price:<br>
+    <input type="text" id='price'name="book[price]"><br>
+    publication:<br>
+    <input type="text" id='publication'name="book[publication]"><br>
+    version:<br>
+    <input type="text" id='version'name="book[version]"><br>
+    no of copies:<br>
+    <input type="text" id='no_of_copies'name="book[no_of_copies]"><br>
+    category_id:<br>
+    <input type="text" id='category_id'name="book[category_id]"><br>
+    library_id:<br>
+    <input type="text" id='library_id'name="book[library_id]"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <button id="add_book">Add Book</button>
+  <table class="table">
+    <tr>
+      <th>NAME</th>
+      <th>AUTHOR</th>
+      <th>ISBN</th>
+      <th>PRICE</th>
+      <th>PUBLICATION</th>
+      <th>VERSION</th>
+      <th>NO OF COPIES</th>
+      <th colspan="3">DETAILS</th>
+    </tr>
+    <tr hidden="true" id="book_template">
+      <td id="book_name" ></td>
+      <td id="book_author"></td>
+      <td id="book_isbn"></td>
+      <td id="book_price"></td>
+      <td id="book_publication"></td>
+      <td id="book_version"></td>
+      <td id="book_no_of_copies"></td>
+      <td id="show"></td> 
+      <td id="edit"></td> 
+      <td id="delete"></td>
+    </tr>
+  </table>
+</div>
+</body>
 </html>

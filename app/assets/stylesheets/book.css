@@ -24,6 +24,43 @@
 	margin: 2px 1px;
 	cursor:pointer;
 }
+#show_book{
+	display: block;
+	width: 50px;
+	height: 25px;
+	background: #4E9CAF;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+#edit_book
+{ 
+	background-color: #32C1E3;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	margin: 2px 1px;
+	font-weight: bold;
+	cursor:pointer;
+}
+#delete_book
+{
+	background-color: #D90809;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	margin: 2px 1px;
+	font-weight: bold;
+	cursor:pointer;
+}
 .table{
 	border-collapse: collapse;
 	width: 100%;

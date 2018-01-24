@@ -1,65 +1,65 @@
 <html>
-  <head>
-	  <script src = "/assets/libraries/show.js"></script>
-  </head>
-  <body>
-    <div id="show_div" >
-  	  <header class="header">
-        <h1 id="heading" ></h1>
-      </header>
-      <table  class="table"> 
-        <tr>
-          <th>ADDRESS</th>
-          <th>PHONE</th>
-        </tr>
-        <tr hidden="true" id="template">
-          <td id="address"></td>
-          <td id="phone"></td>
-        </tr>
-      </table>
-      <h2 id="heading">BOOKS</h2>
-      <form  style="display:none" id="add_new_form">
-        name:<br>
-        <input type="text" id='name' name="book[name]"><br>
-        author:<br>
-        <input type="text" id='address' name="book[author]"><br>
-        isbn:<br>
-        <input type="text" id='phone'name="book[isbn]"><br>
-        price:<br>
-        <input type="text" id='phone'name="book[price]"><br>
-        publication:<br>
-        <input type="text" id='phone'name="book[publication]"><br>
-        version:<br>
-        <input type="text" id='phone'name="book[version]"><br>
-        no of copies:<br>
-        <input type="text" id='phone'name="book[no_of_copies]"><br>
-        category_id:<br>
-        <input type="text" id='phone'name="book[category_id]"><br>
-        library_id:<br>
-        <input type="text" id='phone'name="book[library_id]"><br>
-        <input type="submit" value="Submit">
-      </form>
-      <button id="add_book"></button>
-      <table class="book">
-        <tr>
-          <th>NAME</th>
-          <th>AUTHOR</th>
-          <th>ISBN</th>
-          <th>PRICE</th>
-          <th>PUBLICATION</th>
-          <th>VERSION</th>
-          <th>NO OF COPIES</th>
-        </tr>
-        <tr hidden="true" id="book_template">
-          <td id="book_name" ></td>
-          <td id="book_author"></td>
-          <td id="book_isbn"></td>
-          <td id="book_price"></td>
-          <td id="book_publication"></td>
-          <td id="book_version"></td>
-          <td id="book_no_of_copies"></td>
-        </tr>
-      </table>
-    </div>
-  </body>
+<head>
+ <script src = "/assets/libraries/show.js"></script>
+</head>
+<body>
+  <div id="show_div" >
+   <header class="header">
+    <h1 id="heading" ></h1>
+  </header>
+  <table  class="table"> 
+    <tr>
+      <th>ADDRESS</th>
+      <th>PHONE</th>
+    </tr>
+    <tr hidden="true" id="template">
+      <td id="address"></td>
+      <td id="phone"></td>
+    </tr>
+  </table>
+  <h2 id="heading">BOOKS</h2>
+  <form  style="display:none" id="add_new_form">
+    name:<br>
+    <input type="text" id='name' name="book[name]"><br>
+    author:<br>
+    <input type="text" id='author' name="book[author]"><br>
+    isbn:<br>
+    <input type="text" id='isbn'name="book[isbn]"><br>
+    price:<br>
+    <input type="text" id='price'name="book[price]"><br>
+    publication:<br>
+    <input type="text" id='publication'name="book[publication]"><br>
+    version:<br>
+    <input type="text" id='version'name="book[version]"><br>
+    no of copies:<br>
+    <input type="text" id='no_of_copies'name="book[no_of_copies]"><br>
+    category_id:<br>
+    <input type="text" id='category_id'name="book[category_id]"><br>
+    library_id:<br>
+    <input type="text" id='library_id'name="book[library_id]"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <button id="add_book"></button>
+  <table class="book">
+    <tr>
+      <th>NAME</th>
+      <th>AUTHOR</th>
+      <th>ISBN</th>
+      <th>PRICE</th>
+      <th>PUBLICATION</th>
+      <th>VERSION</th>
+      <th>NO OF COPIES</th>
+    </tr>
+    <tr hidden="true" id="book_template">
+      <td id="book_name" ></td>
+      <td id="book_author"></td>
+      <td id="book_isbn"></td>
+      <td id="book_price"></td>
+      <td id="book_publication"></td>
+      <td id="book_version"></td>
+      <td id="book_no_of_copies"></td>
+    </tr>
+  </table>
+</div>
+</body>
 </html>
