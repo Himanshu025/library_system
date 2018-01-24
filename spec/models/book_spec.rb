@@ -15,7 +15,7 @@ RSpec.describe Book, type: :model do
       book.should_not be_valid
     end
     it 'should not have author with less than 2 characters' do
-      book = build(:book, author: 'a')
+      book = build(:book, author: Faker::Number.number(1))
       book.should_not be_valid
     end
     it 'should not have empty ISBN code' do

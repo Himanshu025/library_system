@@ -1,0 +1,28 @@
+<html>
+<head>
+  <style src="/assets/stylesheets/category.css"></style>
+</head>
+<body>
+ <div id= "index_div">
+  <h2 id="heading">Listing Categories</h2>
+  <form  style="display:none" id="add_new_form">
+    name:<br>
+    <input type="text" id='name' name="category[name]"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <button id="add_category">Add category</button>
+  <table class="table">
+    <tr>
+      <th>NAME</th>
+      <th colspan="3">DETAILS</th>
+    </tr>
+    <tr hidden="true" id="category_template">
+      <td id="category_name" ></td>
+      <td id="show"></td> 
+      <td id="edit"></td> 
+      <td id="delete"></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
